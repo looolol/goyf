@@ -4,7 +4,7 @@ import {MatMenuModule} from "@angular/material/menu";
 import {MatButtonModule} from "@angular/material/button";
 import {MatIconModule} from "@angular/material/icon";
 import {RouterLink} from "@angular/router";
-import {Icons} from "../services/icon.service";
+import {Icons} from "../models/icons.model";
 
 @Component({
   selector: 'app-toolbar',
@@ -22,6 +22,5 @@ import {Icons} from "../services/icon.service";
 export class ToolbarComponent {
 
   cardTypesIcon = Icons.cardTypes;
-  graveyardIcon = Icons.graveyard;
 
 }

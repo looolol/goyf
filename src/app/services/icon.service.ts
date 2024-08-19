@@ -1,20 +1,7 @@
 import { Injectable } from '@angular/core';
 import {MatIconRegistry} from "@angular/material/icon";
 import {DomSanitizer} from "@angular/platform-browser";
-
-export enum Icons {
-  land='land',
-  creature = 'creature',
-  instant='instant',
-  sorcery='sorcery',
-  artifact='artifact',
-  enchantment='enchantment',
-  planeswalker='planeswalker',
-  battle='battle',
-  kindred='kindred',
-  cardTypes="planeswalker",
-  graveyard='graveyard',
-}
+import {Icons} from "../models/icons.model";
 
 @Injectable({
   providedIn: 'root'

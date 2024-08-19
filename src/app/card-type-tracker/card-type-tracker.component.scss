@@ -1,17 +1,11 @@
 .card-container {
-  width: 100%;
-  max-width: 400px; // Adjust width as needed
+  width: 90%;
+  max-width: 800px; // Adjust width as needed
   margin: 20px auto; // Add margin to ensure the card isn't flush with the screen
   padding: 16px; // Add padding inside the card
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); // Stronger shadow for a more pronounced effect
   border-radius: 12px; // Slightly more rounded corners for a modern look
   background-color: #ffffff; // Ensure card has a solid background
-  transition: box-shadow 0.3s ease, transform 0.3s ease; // Smooth transition for hover effects
-  position: relative; // For adding hover effects
-}
-
-.card-container:hover {
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); // Increase shadow on hover for a lift effect
 }
 
 .header {
@@ -81,6 +75,8 @@ button {
   .card-container {
     padding: 12px; // Reduce padding on mobile
     margin: 10px auto; // Reduce margin on mobile
+    width: 90%;
+    max-width: 400px;
   }
   .header {
     font-size: 18px; // Smaller header font size
@@ -90,5 +86,23 @@ button {
   }
   .toggle-item {
     padding: 4px 0; // Reduce padding on toggle items
+  }
+}
+
+@media (min-width: 700px) and (max-width: 1024px) {
+  .card-container {
+    width: 90%;
+    max-width: 800px;
+    padding: 16px;
+    margin: 16px auto;
+  }
+}
+
+@media (min-width: 1024px) {
+  .card-container {
+    width: 80%;
+    max-width: 800px;
+    padding: 20px;
+    margin: 20px auto;
   }
 }
