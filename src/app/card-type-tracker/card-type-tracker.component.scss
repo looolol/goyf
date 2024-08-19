@@ -71,3 +71,20 @@ button {
   color: #ffffff; // Button text color
   border-radius: 4px; // Rounded corners for the button
 }
+
+
+@media (max-width: 600px) {
+  .card-container {
+    padding: 12px; // Reduce padding on mobile
+    margin: 10px auto; // Reduce margin on mobile
+  }
+  .header {
+    font-size: 18px; // Smaller header font size
+  }
+  .card-content {
+    gap: 6px; // Reduce gap further on mobile
+  }
+  .toggle-item {
+    padding: 4px 0; // Reduce padding on toggle items
+  }
+}
