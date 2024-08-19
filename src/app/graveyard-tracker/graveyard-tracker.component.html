@@ -1,1 +1,34 @@
-<p>graveyard-tracker works!</p>
+<mat-card class="card-container">
+  <mat-card-header class="header-container">
+    <span class="header-title">Graveyard Tracker</span>
+    <span class="total-creatures">
+      <strong>Total Creatures:</strong> {{ totalCreatures }}
+    </span>
+  </mat-card-header>
+
+  <mat-card-content>
+    <div class="player-groups">
+      <div *ngFor="let player of players" class="player-group">
+        <mat-card class="player-info">
+          <mat-card-header>
+            {{ player.name }}
+          </mat-card-header>
+
+          <mat-card-content>
+            <mat-form-field class="form-field">
+              <mat-label>Creatures</mat-label>
+              <input matInput type="number" [(ngModel)]="player.creatureCount">
+              <button matSuffix mat-icon-button aria-label="Clear" (click)="player.creatureCount=0">
+                <mat-icon>close</mat-icon>
+              </button>
+            </mat-form-field>
+
+            <button mat-flat-button color="primary" (click)="incrementCount(player)">+1</button>
+          </mat-card-content>
+        </mat-card>
+      </div>
+    </div>
+
+    <button mat-raised-button color="warn" class="clear-button" (click)="clearAll()">Clear All</button>
+  </mat-card-content>
+</mat-card>

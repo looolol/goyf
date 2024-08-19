@@ -1,0 +1,143 @@
+.card-container {
+  width: 100%;
+  max-width: 800px; // Maximum width for larger screens
+  margin: 20px auto;
+  padding: 16px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+  background-color: #e3e7f3;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  position: relative;
+}
+
+.card-container:hover {
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+  transform: translateY(-4px);
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between; // Space between title and total count
+  align-items: center;
+  font-size: 22px;
+  font-weight: 700;
+  color: #333;
+  border-bottom: 2px solid #3f51b5;
+  padding-bottom: 8px;
+  margin-bottom: 16px;
+}
+
+.header-title {
+  text-align: left; // Ensure the title is aligned to the left
+}
+
+.total-creatures {
+  font-size: 18px;
+  font-weight: 600;
+  text-align: right;
+}
+
+.player-groups {
+  display: flex;
+  flex-wrap: wrap; // Allow wrapping for smaller screens
+  gap: 16px; // Space between player groups
+}
+
+.player-group {
+  flex: 1 1 calc(50% - 16px); // Two items per row with gap included
+  min-width: 0; // Ensure flexibility in wrapping
+}
+
+.player-info {
+  display: flex;
+  flex-direction: column; // Stack player name and input group vertically
+  gap: 8px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 8px;
+  background-color: #f9f9f9;
+  height: 100%; // Ensure cards take full height available
+}
+
+mat-card-header {
+  background-color: #ffffff; // Header background color
+  color: #000000; // Header text color
+}
+
+h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: #3f51b5;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.form-field {
+  flex: 1; // Input field should take most space
+}
+
+mat-icon {
+  color: #6200ea;
+}
+
+button[mat-flat-button] {
+  flex: none; // Button does not stretch
+}
+
+.clear-button {
+  margin-top: 16px;
+  display: block; // Ensure it's on a new line
+}
+
+@media (max-width: 600px) {
+  .card-container {
+    padding: 8px;
+  }
+
+  .header-container {
+    font-size: 18px;
+    flex-direction: column; // Stack title and total count vertically on mobile
+    align-items: flex-start;
+  }
+
+  .total-creatures {
+    font-size: 16px;
+    text-align: left; // Align total count to the left on mobile
+  }
+
+  .player-groups {
+    flex-direction: row; // Keep players in a row
+    flex-wrap: wrap; // Allow wrapping
+    gap: 8px; // Reduced gap for mobile
+  }
+
+  .player-group {
+    flex: 1 1 calc(50% - 8px); // Two items per row with reduced gap
+    min-width: 0; // Ensure flexibility
+    max-width: calc(50% - 8px); // Prevent cards from exceeding half the container width
+  }
+
+  .input-group {
+    flex-direction: column; // Stack input field and button
+    gap: 4px;
+  }
+
+  .form-field {
+    width: 100%; // Full width input field
+  }
+
+  button[mat-flat-button] {
+    width: 100%; // Full width button
+    margin-top: 8px;
+  }
+
+  .clear-button {
+    margin-top: 16px;
+    width: 100%; // Full width clear button
+  }
+}
