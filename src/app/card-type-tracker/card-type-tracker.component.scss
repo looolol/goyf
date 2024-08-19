@@ -12,7 +12,6 @@
 
 .card-container:hover {
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); // Increase shadow on hover for a lift effect
-  transform: translateY(-4px); // Slightly lift the card on hover
 }
 
 .header {
@@ -24,10 +23,10 @@
   color: #333; // Darker color for better contrast
   border-bottom: 2px solid #3f51b5; // Bottom border to emphasize the header
   padding-bottom: 8px; // Padding to create space between text and border
+  margin-bottom: 16px;
 }
 
 .header-title {
-  // Ensure title is aligned to the left
   flex: 1; // Takes up available space on the left
 }
 
@@ -42,14 +41,14 @@
 .card-content {
   display: flex;
   flex-direction: column;
-  gap: 16px; // Space between each toggle item
+  gap: 8px; // Reduced space between each toggle item for mobile view
 }
 
 .toggle-item {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 8px 0; // Add padding to each toggle item
+  padding: 4px 0; // Reduced padding to minimize the overall size on mobile view
 }
 
 .icon-toggle-container {
@@ -67,7 +66,7 @@ mat-slide-toggle {
 }
 
 button {
-  margin-top: 16px; // Add margin on top of the button
+  margin-top: 12px; // Slightly reduced margin on top of the button
   background-color: #6200ea; // Primary button color
   color: #ffffff; // Button text color
   border-radius: 4px; // Rounded corners for the button
