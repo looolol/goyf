@@ -1,7 +1,7 @@
 import {Component} from '@angular/core';
 import {RouterOutlet} from '@angular/router';
 import {CardTypeTrackerComponent} from "./card-type-tracker/card-type-tracker.component";
-import {GraveyardTrackerComponent} from "./graveyard-tracker/graveyard-tracker.component";
+import {PlayerComponent} from "./player-component/player-component.component";
 import {ToolbarComponent} from "./toolbar/toolbar.component";
 import {IconService} from "./services/icon.service";
 
@@ -12,7 +12,7 @@ import {IconService} from "./services/icon.service";
     RouterOutlet,
     ToolbarComponent,
     CardTypeTrackerComponent,
-    GraveyardTrackerComponent,
+    PlayerComponent,
   ],
   providers: [
     IconService,

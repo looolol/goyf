@@ -5,14 +5,9 @@
   padding: 16px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   border-radius: 12px;
-  background-color: #e3e7f3;
+  background-color: #ffffff;
   transition: box-shadow 0.3s ease, transform 0.3s ease;
   position: relative;
-}
-
-.card-container:hover {
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
-  transform: translateY(-4px);
 }
 
 .header-container {
@@ -29,12 +24,17 @@
 
 .header-title {
   text-align: left; // Ensure the title is aligned to the left
+  width: 100%;
+  background-color: #ffffff; // Header background color
+  color: #000000; // Header text color
 }
 
 .total-creatures {
+  width: 100%;
   font-size: 18px;
   font-weight: 600;
   text-align: right;
+  justify-content: right;
 }
 
 .player-groups {
@@ -48,20 +48,24 @@
   min-width: 0; // Ensure flexibility in wrapping
 }
 
-.player-info {
+.player {
   display: flex;
   flex-direction: column; // Stack player name and input group vertically
   gap: 8px;
   border: 1px solid #ddd;
   border-radius: 8px;
   padding: 8px;
-  background-color: #f9f9f9;
+  //background-color: #f9f9f9;
+  background-color: #e3e7f3;
   height: 100%; // Ensure cards take full height available
 }
 
-mat-card-header {
-  background-color: #ffffff; // Header background color
-  color: #000000; // Header text color
+.player-info .mat-mdc-card-content {
+  margin: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 h3 {
@@ -79,6 +83,7 @@ h3 {
 
 .form-field {
   flex: 1; // Input field should take most space
+  width: 100%;
 }
 
 mat-icon {
@@ -87,6 +92,29 @@ mat-icon {
 
 button[mat-flat-button] {
   flex: none; // Button does not stretch
+}
+
+.modify-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+
+  button {
+    height: 50%;
+  }
+}
+
+.misc-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: 16px;
+  font-size: 18px;
+  text-align: right;
+
+  button {
+    margin-left: 8px;
+  }
 }
 
 .clear-button {
@@ -142,3 +170,61 @@ button[mat-flat-button] {
     width: 100%; // Full width clear button
   }
 }
+
+.outline {
+  color: white;
+  background-color: #3f51b5;
+  border-color: black;
+  border-style: solid;
+  border-width: thin;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+  padding: 12px 0;
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+.player-info mat-card-header {
+  display: flex;
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  width: 80%;
+  height: 100%; /* Ensure full height */
+  min-width: 75%;
+  padding: 5px 0px;
+  overflow: hidden; /* Hide overflow content */
+  text-overflow: ellipsis; /* Show ellipsis for overflowed text */
+  white-space: nowrap; /* Prevent text from wrapping */
+}
+
+.player-name {
+  display: block; /* Ensure span takes full width available */
+  max-width: 90%; /* Ensure span does not exceed card width */
+  overflow: hidden; /* Hide overflow content */
+  text-overflow: ellipsis; /* Show ellipsis for overflowed text */
+  white-space: nowrap; /* Prevent text from wrapping */
+}
+
+
+@media (min-width: 700px) and (max-width: 1024px) {
+  .card-container {
+    width: 90%;
+    max-width: 800px;
+    padding: 16px;
+    margin: 16px auto;
+  }
+}
+
+@media (min-width: 1024px) {
+  .card-container {
+    width: 80%;
+    max-width: 800px;
+    padding: 20px;
+    margin: 20px auto;
+  }
+}
+

@@ -1,0 +1,18 @@
+<h2 mat-dialog-title>Player Settings</h2>
+<div mat-dialog-content>
+  <form>
+    <div *ngFor="let player of players; let i = index">
+      <mat-form-field appearance="fill">
+        <mat-label>Player {{i + 1}} Name</mat-label>
+        <input matInput
+               [(ngModel)]="player.name" name="player-{{i}}"
+               (focus)="clearPlayerName(player)"
+        />
+      </mat-form-field>
+    </div>
+  </form>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">Cancel</button>
+  <button mat-button color="primary" (click)="save()">Save</button>
+</div>

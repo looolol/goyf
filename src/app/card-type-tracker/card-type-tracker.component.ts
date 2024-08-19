@@ -4,8 +4,9 @@ import {MatIconModule} from "@angular/material/icon";
 import {CommonModule} from "@angular/common";
 import {MatButtonModule} from "@angular/material/button";
 import {MatCardModule} from "@angular/material/card";
-import {Icons} from "../services/icon.service";
 import {MatLabel} from "@angular/material/form-field";
+import {CardTypeToggle} from "../models/toggle.model";
+import {Icons} from "../models/icons.model";
 
 @Component({
   selector: 'app-card-type-tracker',
@@ -22,7 +23,7 @@ import {MatLabel} from "@angular/material/form-field";
   styleUrl: './card-type-tracker.component.scss',
 })
 export class CardTypeTrackerComponent implements OnInit {
-  toggles = [
+  toggles: CardTypeToggle[] = [
     { label: 'Creature', icon: Icons.creature, checked: false },
     { label: 'Land', icon: Icons.land, checked: false },
     { label: 'Instant', icon: Icons.instant, checked: false },
@@ -34,11 +35,11 @@ export class CardTypeTrackerComponent implements OnInit {
     { label: 'Kindred', icon: Icons.kindred, checked: false }
   ];
 
-  ngOnInit() {
+  ngOnInit(): void {
     this.loadToggleStates();
   }
 
-  loadToggleStates() {
+  loadToggleStates(): void {
     this.toggles.forEach(toggle => {
       const savedState = localStorage.getItem(`toggle-${toggle.label}`);
       if (savedState !== null) {
@@ -47,21 +48,21 @@ export class CardTypeTrackerComponent implements OnInit {
     });
   }
 
-  saveToggleState(toggle: any) {
+  saveToggleState(toggle: CardTypeToggle): void {
     localStorage.setItem(`toggle-${toggle.label}`, JSON.stringify(toggle.checked));
   }
 
-  get goyfCount() {
+  get goyfCount(): string {
     const toggleTotal = this.toggles.filter(toggle => toggle.checked).length;
     return `${toggleTotal}/${toggleTotal + 1}`;
   }
 
-  onToggleChange(event: MatSlideToggleChange, toggle: any) {
+  onToggleChange(event: MatSlideToggleChange, toggle: CardTypeToggle): void {
     toggle.checked = event.checked;
     this.saveToggleState(toggle);
   }
 
-  clearToggles() {
+  clearToggles(): void {
     this.toggles.forEach(toggle => {
       toggle.checked = false;
       this.saveToggleState(toggle);

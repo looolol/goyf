@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { GraveyardTrackerComponent } from './graveyard-tracker.component';
+import { PlayerComponent } from './player-component.component';
 
 describe('GraveyardTrackerComponent', () => {
-  let component: GraveyardTrackerComponent;
-  let fixture: ComponentFixture<GraveyardTrackerComponent>;
+  let component: PlayerComponent;
+  let fixture: ComponentFixture<PlayerComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [GraveyardTrackerComponent]
+      imports: [PlayerComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(GraveyardTrackerComponent);
+    fixture = TestBed.createComponent(PlayerComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
