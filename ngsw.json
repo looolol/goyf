@@ -1,0 +1,87 @@
+{
+  "configVersion": 1,
+  "timestamp": 1724049823345,
+  "index": "/goyf/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/goyf/8.812ba7151ac5131b.js",
+        "/goyf/index.html",
+        "/goyf/main.9f8eed4209bbe019.js",
+        "/goyf/manifest.webmanifest",
+        "/goyf/polyfills.5499a55ffb9bed71.js",
+        "/goyf/runtime.d4093086e42d0892.js",
+        "/goyf/styles.14773823b2d6e6d7.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/goyf/assets/icons/artifact.svg",
+        "/goyf/assets/icons/battle.svg",
+        "/goyf/assets/icons/creature.svg",
+        "/goyf/assets/icons/enchantment.svg",
+        "/goyf/assets/icons/graveyard.svg",
+        "/goyf/assets/icons/instant.svg",
+        "/goyf/assets/icons/kindred.svg",
+        "/goyf/assets/icons/land.svg",
+        "/goyf/assets/icons/planeswalker.svg",
+        "/goyf/assets/icons/sorcery.svg",
+        "/goyf/assets/tarmogoyf.png"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "/goyf/8.812ba7151ac5131b.js": "361ef502dcdecf7fb4e290f494b40e6090657ea4",
+    "/goyf/assets/icons/artifact.svg": "ab3a68e9db95f63d7828b5406e7b76201b67ef96",
+    "/goyf/assets/icons/battle.svg": "e637a88bbd0c9dd2de0e906d4a7b64b224942b04",
+    "/goyf/assets/icons/creature.svg": "5e863bf648d63ab9abdbce07103155c95b5e5361",
+    "/goyf/assets/icons/enchantment.svg": "60ce00756777f3e09d06377da347b64cdc55ac14",
+    "/goyf/assets/icons/graveyard.svg": "b87769816ce0a0b53a00684d9f75e8865726537f",
+    "/goyf/assets/icons/instant.svg": "acb398736bc533982643e8860ce12bcc1f7ed0d0",
+    "/goyf/assets/icons/kindred.svg": "5fe0a3de96cd940ba1e6469adb6a5546d9baa90f",
+    "/goyf/assets/icons/land.svg": "77e7ea1189529f84b752bb5ab031b721f5ed00c1",
+    "/goyf/assets/icons/planeswalker.svg": "261a61d7f891b1094909208fba7d228fc7f68eac",
+    "/goyf/assets/icons/sorcery.svg": "f944bd8ebb0fe2bffe5101e4b7bf61337e6fd6bd",
+    "/goyf/assets/tarmogoyf.png": "cedcc0261d98ac2abdf94b03e3f148893314f620",
+    "/goyf/index.html": "6c26030211e4754fa807c27729215609ad847a96",
+    "/goyf/main.9f8eed4209bbe019.js": "9e4152c7ee76e0ee64a482c69f7648ed15fe1e20",
+    "/goyf/manifest.webmanifest": "2ce57ca5f0acc8c519f5bbc37099fb01e47afbef",
+    "/goyf/polyfills.5499a55ffb9bed71.js": "bd4061f290a31fbf11c72cca64c0bd8d6ae3c4c4",
+    "/goyf/runtime.d4093086e42d0892.js": "affc0e42aba5b19623f3b13e0d0d4d3ed730338c",
+    "/goyf/styles.14773823b2d6e6d7.css": "b239478560def4176aaf67ec873d97d29590810a"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ],
+  "navigationRequestStrategy": "performance"
+}
