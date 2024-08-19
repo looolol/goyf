@@ -28,14 +28,12 @@ export class IconService {
   }
 
   public registerIcons(): void {
-    console.log('register icons');
     this.loadIcons(Object.values(Icons));
   }
 
   private loadIcons(iconKeys: string[]): void {
     iconKeys.forEach(key => {
       const url = `${this.iconUrl}/${key}.svg`;
-      console.log('Registering icon', key, 'with URL', url);
 
       this.matIconRegistry.addSvgIcon(
         key,
