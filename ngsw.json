@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1724050312306,
+  "timestamp": 1724061382944,
   "index": "/goyf/index.html",
   "assetGroups": [
     {
@@ -13,7 +13,7 @@
       "urls": [
         "/goyf/8.812ba7151ac5131b.js",
         "/goyf/index.html",
-        "/goyf/main.9f8eed4209bbe019.js",
+        "/goyf/main.35774165f5ffbda0.js",
         "/goyf/manifest.webmanifest",
         "/goyf/polyfills.5499a55ffb9bed71.js",
         "/goyf/runtime.d4093086e42d0892.js",
@@ -58,8 +58,8 @@
     "/goyf/assets/icons/planeswalker.svg": "261a61d7f891b1094909208fba7d228fc7f68eac",
     "/goyf/assets/icons/sorcery.svg": "f944bd8ebb0fe2bffe5101e4b7bf61337e6fd6bd",
     "/goyf/assets/tarmogoyf.png": "cedcc0261d98ac2abdf94b03e3f148893314f620",
-    "/goyf/index.html": "21bc3e6b302bc8bb79f5b7afe84d605876f98269",
-    "/goyf/main.9f8eed4209bbe019.js": "9e4152c7ee76e0ee64a482c69f7648ed15fe1e20",
+    "/goyf/index.html": "1b6dd369f1ae9468c424ab2ecc011beb8d0833e3",
+    "/goyf/main.35774165f5ffbda0.js": "49ad9398c6db274acb3017a7a63c0b3d76c8ffb5",
     "/goyf/manifest.webmanifest": "2ce57ca5f0acc8c519f5bbc37099fb01e47afbef",
     "/goyf/polyfills.5499a55ffb9bed71.js": "bd4061f290a31fbf11c72cca64c0bd8d6ae3c4c4",
     "/goyf/runtime.d4093086e42d0892.js": "affc0e42aba5b19623f3b13e0d0d4d3ed730338c",
