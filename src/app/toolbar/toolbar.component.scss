@@ -1,0 +1,38 @@
+$background-color: #3f51b5;
+
+.toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+  height: 64px; // Default height for mat-toolbar
+  background-color: $background-color; // Add a background color for visibility
+}
+
+mat-menu {
+  mat-menu-item {
+    display: flex;
+    align-items: center;
+    gap: 8px; // Space between icon and text
+    background-color: $background-color !important;
+
+    // Optionally, set hover and active states for better UI
+    &:hover {
+      background-color: darken($background-color, 10%); // Slightly darker on hover
+    }
+    &:focus {
+      background-color: lighten($background-color, 10%); // Slightly lighter when focused
+    }
+  }
+}
+
+mat-icon {
+  font-size: 24px; // Adjust icon size as needed
+  color: white;
+}
+
+.toolbar-title {
+  font-size: 32px;
+  font-weight: bold;
+  color: #fff; // Ensure text is visible
+}

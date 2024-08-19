@@ -1,0 +1,28 @@
+<mat-card class="card-container">
+
+  <mat-card-header class="header">
+    <span class="header-title">Tarmogoyf Size</span>
+    <div class="header-count">{{ goyfCount }}</div>
+  </mat-card-header>
+
+  <!-- Toggles -->
+  <mat-card-content class="card-content">
+    <ng-container *ngFor="let toggle of toggles">
+      <div class="toggle-item">
+
+        <mat-label>{{toggle.label}}</mat-label>
+
+        <div class="icon-toggle-container">
+          <mat-icon [svgIcon]="toggle.icon"></mat-icon>
+          <mat-slide-toggle
+            [checked]="toggle.checked"
+            (change)="onToggleChange($event, toggle)"
+          ></mat-slide-toggle>
+        </div>
+
+      </div>
+    </ng-container>
+  </mat-card-content>
+
+  <button mat-flat-button color="primary" (click)="clearToggles()">Clear</button>
+</mat-card>

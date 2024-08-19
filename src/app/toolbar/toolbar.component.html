@@ -1,0 +1,23 @@
+<mat-toolbar color="primary" class="toolbar">
+
+  <!-- Title -->
+  <span class="toolbar-title">Goyf</span>
+
+  <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Menu">
+    <mat-icon>menu</mat-icon>
+  </button>
+
+  <!-- Menu Items -->
+  <mat-menu #menu="matMenu" class="matMenu">
+    <button mat-menu-item routerLink="/card-types">
+      <mat-icon [svgIcon]="cardTypesIcon" class=""></mat-icon>
+      <span>Card Types</span>
+    </button>
+
+    <button mat-menu-item routerLink="/graveyard">
+      <mat-icon [svgIcon]="graveyardIcon"></mat-icon>
+      <span>Graveyard</span>
+    </button>
+  </mat-menu>
+
+</mat-toolbar>
