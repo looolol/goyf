@@ -1,2 +1,12 @@
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+/* Disable scrolling */
+body {
+  overflow: hidden;
+}
+
+/* Prevent double-tap to zoom */
+html, body {
+  touch-action: manipulation; /* Prevent double-tap zoom */
+}
