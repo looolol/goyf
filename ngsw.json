@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1724049823345,
+  "timestamp": 1724050312306,
   "index": "/goyf/index.html",
   "assetGroups": [
     {
@@ -17,7 +17,7 @@
         "/goyf/manifest.webmanifest",
         "/goyf/polyfills.5499a55ffb9bed71.js",
         "/goyf/runtime.d4093086e42d0892.js",
-        "/goyf/styles.14773823b2d6e6d7.css"
+        "/goyf/styles.ffd9e4d15754c599.css"
       ],
       "patterns": []
     },
@@ -58,12 +58,12 @@
     "/goyf/assets/icons/planeswalker.svg": "261a61d7f891b1094909208fba7d228fc7f68eac",
     "/goyf/assets/icons/sorcery.svg": "f944bd8ebb0fe2bffe5101e4b7bf61337e6fd6bd",
     "/goyf/assets/tarmogoyf.png": "cedcc0261d98ac2abdf94b03e3f148893314f620",
-    "/goyf/index.html": "6c26030211e4754fa807c27729215609ad847a96",
+    "/goyf/index.html": "21bc3e6b302bc8bb79f5b7afe84d605876f98269",
     "/goyf/main.9f8eed4209bbe019.js": "9e4152c7ee76e0ee64a482c69f7648ed15fe1e20",
     "/goyf/manifest.webmanifest": "2ce57ca5f0acc8c519f5bbc37099fb01e47afbef",
     "/goyf/polyfills.5499a55ffb9bed71.js": "bd4061f290a31fbf11c72cca64c0bd8d6ae3c4c4",
     "/goyf/runtime.d4093086e42d0892.js": "affc0e42aba5b19623f3b13e0d0d4d3ed730338c",
-    "/goyf/styles.14773823b2d6e6d7.css": "b239478560def4176aaf67ec873d97d29590810a"
+    "/goyf/styles.ffd9e4d15754c599.css": "7841d49dd67005983906dbf59f15d5da26fd8ca4"
   },
   "navigationUrls": [
     {
