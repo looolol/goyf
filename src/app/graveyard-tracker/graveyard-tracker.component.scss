@@ -96,7 +96,8 @@ button[mat-flat-button] {
 
 @media (max-width: 600px) {
   .card-container {
-    padding: 8px;
+    padding: 12px;
+    margin: 10px auto; // Reduce margin on mobile
   }
 
   .header-container {
